@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>ENI-Encheres</display-name>
+  
+   <servlet>
+    <description>JSP afficher profile</description>
+    <servlet-name>Profile</servlet-name>
+    <jsp-file>/WEB-INF/jsp/afficherProfile.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+  	    <servlet-name>Profile</servlet-name>
+  		<url-pattern>/Profile</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description>JSP connexion</description>
+    <servlet-name>Connexion</servlet-name>
+    <jsp-file>/WEB-INF/jsp/connexion.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+  	    <servlet-name>Connexion</servlet-name>
+  		<url-pattern>/Connexion</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description>JSP detail vente</description>
+    <servlet-name>DetailVente</servlet-name>
+    <jsp-file>/WEB-INF/jsp/detailVente.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+  	    <servlet-name>DetailVente</servlet-name>
+  		<url-pattern>/DetailVente</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description>JSP listeEncheres</description>
+    <servlet-name>Accueil</servlet-name>
+    <jsp-file>/WEB-INF/jsp/listeEncheres.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+  	    <servlet-name>Accueil</servlet-name>
+  		<url-pattern>/Accueil</url-pattern>
+  </servlet-mapping>
+ 
+  <servlet>
+    <description>JSP mon Profile</description>
+    <servlet-name>MonProfile</servlet-name>
+    <jsp-file>/WEB-INF/jsp/monProfile.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+  	    <servlet-name>MonProfile</servlet-name>
+  		<url-pattern>/MonProfile</url-pattern>
+  </servlet-mapping>
+ 
+  <servlet>
+    <description>JSP nouvelle vente</description>
+    <servlet-name>NouvelleVente</servlet-name>
+    <jsp-file>/WEB-INF/jsp/nouvelleVente.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+  	    <servlet-name>NouvelleVente</servlet-name>
+  		<url-pattern>/NouvelleVente</url-pattern>
+  </servlet-mapping>
+  
+  
+</web-app>

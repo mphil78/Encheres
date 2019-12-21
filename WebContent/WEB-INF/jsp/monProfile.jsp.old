@@ -1,0 +1,61 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Création Compte</title>
+</head>
+<body>
+<h1>ENI-Enchères</h1><br>
+<div>
+<h2>Mon Profil</h2>
+<form action="./TraitementProfile" method="post"
+oninput='password2.setCustomValidity(password2.value != password.value ? "La confirmation du mot de passe est érronée." : "")'>
+<p>
+<label for="pseudo">Pseudo : </label>
+<input type="text" name="pseudo" id="pseudo" value="toto" required>
+</p>
+<p>
+<label for="nom">Nom : </label>
+<input type="text" name="nom" id="nom" value="toto" required><br>
+</p>
+<p>
+<label for="prenom">Prénom : </label>
+<input type="text" name="prenom" id="prenom" value="Ptoto" required>
+</p>
+<p>
+<label for="email">Email : </label>
+<input type="email" name="email" id="email" value="toto@poi.com" required><br>
+</p>
+<p>
+<label for="telephone">Téléphone : </label>
+<input type="text" name="telephone" id="telephone" value="1234567981"required>
+</p>
+<p>
+<label for="rue">Rue : </label>
+<input type="text" name="rue" id="rue" value="rue du bois" required><br>
+</p>
+<p>
+<label for="codePostal">Code Postal : </label>
+<input type="text" name="codePostal" id="codePostal" value="45123" required>
+</p>
+<p>
+<label for="ville">Ville : </label>
+<input type="text" name="ville" id="ville" value="angers" required><br>
+</p>
+      
+<p>
+<label for="password">Mot de Passe : </label>
+<input type="password" name="password" id="password" value="azerty" required>
+</p>
+<p>
+<label for="password2">Confirmation : </label>
+<input type="password" name="password2" id="password2" value="azerty" required><br>
+</p>
+<button type="submit" name="creer" id="creer">Créer</button>
+<a href="./Accueil" ><button type="reset" name="annuler" id="annuler">Annuler</button></a>
+</form>
+</div>
+</body>
+</html>
